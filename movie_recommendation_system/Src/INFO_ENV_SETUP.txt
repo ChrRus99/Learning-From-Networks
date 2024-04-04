@@ -1,0 +1,26 @@
+System information:
+    - Anaconda environment: tf-gpu
+    - Python version: Python 3.10
+    - CUDA toolkit version: 12.1
+    - cudnn 8.9.6.50
+
+
+System Setup Instruction:
+    - Tensorflow/Pytorch GPU enabling tutorials:
+        https://www.youtube.com/watch?v=r7Am-ZGMef8&ab_channel=SL7Tech
+        https://medium.com/@ashkan.abbasi/quick-guide-for-installing-python-tensorflow-and-pycharm-on-windows-ed99ddd9598
+        https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows
+    - Important note:
+        - Check versions of cuda toolkit required here https://pytorch.org/ + copy and execute pip install instruction
+            suggested
+        - Install cudnn + add its files to cuda toolkit
+        - Check CUDA version installed: nvcc --version
+        - Set Anaconda new environment:
+            - conda create -n tf-gpu python=3.10
+            - conda activate tf-gpu
+            - conda disable
+        - Note for installing missing Python pakages use Anaconda: conda install <pkg_name>
+        - Pycharm interpreter set up:
+            - [env: tf-gpu] -> add it as interpreter in PyCharm
+            - To do it: Settings - Python Interpreter - Add Interpreter - Add local interpreter - System interpreter -
+                find:D:\Users\Christian Russo\anaconda3\envs\tf-gpu\python.exe
